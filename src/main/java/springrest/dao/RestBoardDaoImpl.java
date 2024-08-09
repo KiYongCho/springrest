@@ -28,8 +28,7 @@ public class RestBoardDaoImpl implements RestBoardDao {
 
 	@Override
 	public int insertRestBoard(RestBoard restBoard) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return sqlSession.insert("RestBoard.insertRestBoard", restBoard);
 	}
 
 	@Override
