@@ -16,14 +16,12 @@ public class RestBoardDaoImpl implements RestBoardDao {
 
 	@Override
 	public List<RestBoard> listRestBoard() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		return sqlSession.selectList("RestBoard.listRestBoard");
 	}
 
 	@Override
 	public RestBoard getRestBoard(int rbid) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		return sqlSession.selectOne("RestBoard.getRestBoard", rbid);
 	}
 
 	@Override
@@ -33,14 +31,12 @@ public class RestBoardDaoImpl implements RestBoardDao {
 
 	@Override
 	public int updateRestBoard(RestBoard restBoard) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return sqlSession.update("RestBoard.updateRestBoard", restBoard);
 	}
 
 	@Override
 	public int deleteRestBoard(int rbid) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return sqlSession.delete("RestBoard.deleteRestBoard", rbid);
 	}
 
 }
