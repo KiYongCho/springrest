@@ -6,11 +6,11 @@ public class RestBoard {
 	
 	private int rbid;
 	private String rbwriter;
-	private String rbtitle;
+	private String rbtitle; 
 	private String rbcontent;
 	private Timestamp rbregdate;
 	
-	public RestBoard() {
+	public RestBoard() { 
 	}
 
 	public RestBoard(int rbid, String rbwriter, String rbtitle, String rbcontent, Timestamp rbregdate) {
