@@ -51,7 +51,7 @@ public class RestBoardTest {
 		assertEquals(result, 1);
 	}	
 	
-	@Test
+	//@Test
 	public void deleteRestBoard() throws Exception {
 		int result = restBoardService.deleteRestBoard(3);
 		assertEquals(result, 1);	

@@ -2,6 +2,9 @@ package springrest.domain;
 
 import java.sql.Timestamp;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class RestBoard {
 	
 	private int rbid;
