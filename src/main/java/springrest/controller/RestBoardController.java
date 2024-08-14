@@ -3,7 +3,6 @@ package springrest.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,12 +33,12 @@ public class RestBoardController {
 		return ResponseEntity.ok(restBoard);
 	}
 	
-	@PostMapping(value="/board", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value="/board")
 	public int insertRestBoard(@RequestBody RestBoard restBoard) throws Exception {
 		return restBoardService.insertRestBoard(restBoard);
 	}
 	
-	@PutMapping(value="/board", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PutMapping(value="/board")
 	public int updateRestBoard(@RequestBody RestBoard restBoard) throws Exception {
 		return restBoardService.updateRestBoard(restBoard);
 	}

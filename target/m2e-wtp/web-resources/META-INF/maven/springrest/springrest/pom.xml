@@ -117,6 +117,20 @@
     	<version>6.0.0</version>
 	</dependency>
 	
+	<!-- log4j2 -->
+	<dependency>
+    	<groupId>io.basc.framework</groupId>
+    	<artifactId>log4j2</artifactId>
+    	<version>1.8.3</version>
+	</dependency>
+	
+	<!--  log4jdbc-log4j2 -->
+	<dependency>
+    	<groupId>org.bgee.log4jdbc-log4j2</groupId>
+    	<artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+    	<version>1.16</version>
+	</dependency>
+	
   </dependencies>
 </project>
 

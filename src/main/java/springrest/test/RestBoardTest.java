@@ -27,7 +27,7 @@ public class RestBoardTest {
 	
 	//@Test
 	public void insertRestBoard() throws Exception {
-		RestBoard restBoard = new RestBoard(0, "ÀÛ¼ºÀÚ", "Á¦¸ñ", "³»¿ë", null);
+		RestBoard restBoard = new RestBoard(0, "ï¿½Û¼ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", null);
 		int result = restBoardService.insertRestBoard(restBoard);
 		assertEquals(result, 1);
 	}
@@ -38,7 +38,7 @@ public class RestBoardTest {
 		System.out.println(restBoardList);
 	}
 	
-	//@Test
+	@Test
 	public void getRestBoard() throws Exception {
 		RestBoard restBoard = restBoardService.getRestBoard(3);
 		System.out.println(restBoard);
@@ -46,7 +46,7 @@ public class RestBoardTest {
 	
 	//@Test
 	public void updateRestBoard() throws Exception {
-		RestBoard restBoard = new RestBoard(3, "ÀÛ¼ºÀÚup", "Á¦¸ñup", "³»¿ëup", null);
+		RestBoard restBoard = new RestBoard(3, "ï¿½Û¼ï¿½ï¿½ï¿½up", "ï¿½ï¿½ï¿½ï¿½up", "ï¿½ï¿½ï¿½ï¿½up", null);
 		int result = restBoardService.updateRestBoard(restBoard);
 		assertEquals(result, 1);
 	}	
