@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
 		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd">
-
+	
 	<context:property-placeholder location="classpath:springrest/prop/jdbc.properties" />
 
 	<context:component-scan base-package="springrest" />
@@ -40,6 +40,7 @@
 	<bean id="restBoardService" class="springrest.service.RestBoardServiceImpl" />
 	
 	<!-- Message Converter -->
+	<!-- remove when JUnit Test -->
 	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
     	<property name="messageConverters">
         	<list>
@@ -47,7 +48,7 @@
         	</list>
     	</property>
 	</bean>
- 
+	
 </beans>
 
 
